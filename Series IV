@@ -1,0 +1,18 @@
+Write a program to generate the following series --- 0.5,1.5,4.5,13.5,...
+import java.util.Scanner;
+public class Series4
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        float n=sc.nextInt();
+        float b=1;
+        System.out.printf("%.1f ",b/2);
+        for(int i=1;i<=n;i++)
+        {
+            b*=3;
+            float c=b/2;
+            System.out.printf("%.1f  ",c);
+        }//Write your code
+    }
+}
