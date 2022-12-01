@@ -1,0 +1,21 @@
+Write a program to find which department students placed for the max in the college. 
+import java.util.*;
+public class Placement
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println(" Enter the no of students placed in CSE: ");
+        int c=sc.nextInt();
+        System.out.println(" Enter the no of students placed in ECE: ");
+        int e=sc.nextInt();
+        System.out.println(" Enter the no of students placed in MECH: ");
+        int m=sc.nextInt();
+        if(c>e&&c>m)
+        System.out.println("Highest placement\nCSE");
+        else if(e>c&&e>m)
+         System.out.println("Highest placement\nECE");
+         else
+          System.out.println("Highest placement\nMECH");
+    }
+}    //code here
