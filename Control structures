@@ -1,0 +1,18 @@
+Dev went a tour to Goa with his friends. There they went for boating. The rule is that only restricted weight can travel in a boat at a time so that the boat remains stable in the boat. You find that the boatman who is sailing your boat is so much greedy in making money. For earning more money he takes many number of peoples to travel in the boat at a time. So you wants to check how much number of people can travel in the boat at a time so that the boat will not drown. Calculate the weight by considering the number of adults and number of children.
+import java.util.Scanner;
+public class Assessment1{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int w=sc.nextInt();
+        int a=sc.nextInt();
+        int c=sc.nextInt();
+        int x=a*75;
+        int y=c*50;
+        if(w>=(x+y)){
+            System.out.println("Boat is stable");
+            }
+            else{
+                System.out.println("Boat is unstable");
+                }
+    }
+}    
