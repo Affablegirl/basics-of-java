@@ -1,0 +1,26 @@
+Write a program to generate the following series --- 1, 2.0, 3.0, 6.0, 9.0, 18.0, 27.0,... 
+import java.util.Scanner;
+public class Series7
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double n=sc.nextDouble();
+        double a=1,b=2;
+        System.out.printf("%.0f %.1f ",a,b);
+        for(int i=1;i<n-1;i++)
+        {
+            if(i%2==1)
+            {
+                a=a*3;
+                System.out.printf("%.1f ",a);
+            }
+            else
+            {
+                b*=3;
+                System.out.printf("%.1f ",b);
+            }
+        }
+        //Write your code
+    }
+}
