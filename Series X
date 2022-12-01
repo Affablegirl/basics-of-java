@@ -1,0 +1,23 @@
+Write a program to generate the following series 95.0, 115.5, 138.0,..., 189.0 
+import java.util.Scanner;
+public class Series10
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        double d=95.0,a=20.5;
+        double e=a;
+        System.out.printf("%.1f ",d);
+        for(int i=n;i<=n;i++)
+        {
+            while(a<=e+(n-2)*2)
+            {
+                d=d+a;
+                System.out.printf("%.1f ",d);
+                a=a+2;
+            }
+        }
+        //Write your code
+    }
+}
