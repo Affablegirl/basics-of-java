@@ -1,0 +1,48 @@
+Write a program that creates integer array of 10 elements, accepts values of arrays and Find Sum, Average, Min, Max.
+import java.util.*;
+public class Summinmax
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int sum=0,min=1,max=0;
+        int b=0;
+        //float avg=0;
+        //System.out.println("Enter 10 array elements");
+        //System.out.println("Array:");
+        int a[]=new int[10];
+        for(int i=0;i<10;i++)
+        {
+            a[i]=sc.nextInt();
+            //System.out.println(" ");
+        }
+        for(int i=0;i<10;i++)
+        {
+           sum+=a[i];
+        }
+        System.out.println("Enter 10 array elements");
+        System.out.println("Array:");
+        System.out.println("sum: " + sum);
+        for(int i=0;i<10;i++)
+        {
+           if(a[i]<min)
+           min=a[i];
+        }
+        System.out.println("min: " + min);
+        for(int i=0;i<10;i++)
+        {
+           if(max<a[i])
+           max=a[i];
+        }
+        System.out.println("max: " + max);
+        for(int i=0;i<10;i++)
+        {
+            //int b=0;
+           b+=a[i];
+           //avg=sum/10;
+        }
+        //System.out.println("sum: " + sum);
+        float avg=(float)b/10;
+        System.out.printf("average :%.1f",avg);
+    }
+}    //code here
