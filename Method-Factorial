@@ -1,0 +1,29 @@
+Write a program to determine whether n is a factorial number or not. A factorial number is a number that is a factorial of another number.
+import java.util.Scanner;
+public class Factorial//main class
+{
+    public static void main(String[] args)//main function
+    {
+        Scanner sc=new Scanner(System.in);//objectname of main
+        Factorial2 fac=new Factorial2();//object name of subclass
+        int a=sc.nextInt();
+        int f=fac.rail(a);
+         if(f==a)       
+            System.out.println("yes");
+        else
+            System.out.println("no");//Write your code
+    }
+}//class factorial
+class Factorial2
+{
+    public static int rail(int a)
+    {//method fact
+        int f=1,i=1;
+         while(i<=a/2)
+        {
+            f*=i;
+            i++;
+        }
+            return f;
+    }
+}
