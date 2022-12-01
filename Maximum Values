@@ -1,0 +1,26 @@
+Write a program to find the maximum element in an array:
+import java.util.*;
+public class Max
+{
+    public static void main(String[] args)
+    {
+        Scanner scs=new Scanner(System.in);
+        int n=scs.nextInt();
+        int a[]=new int[n];
+        int max=0;
+        for(int i=0;i<n;i++)//input loop
+        {
+            a[i]=scs.nextInt();
+            //int max=a[i];
+            if(max<a[i])
+            {
+                max=a[i];
+            }    
+        }
+        System.out.println(max);
+        /*for(int i=0;i<n;i++)//output loop
+        {
+            
+        }*/
+    }
+}
