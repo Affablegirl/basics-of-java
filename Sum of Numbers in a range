@@ -1,0 +1,18 @@
+Write a program to find the sum of numbers in a given range is discussed here. Given the starting and ending interval, the sum of all the numbers in that range will be displayed as output.
+import java.util.Scanner;
+public class Sumofnum
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int sum=0;
+        for(int i=a;i<=b;i++)
+        {
+            sum+=i;
+        }
+        System.out.println(sum);
+        //Write your code
+    }
+}
