@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Friendly
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Friendly2 m=new Friendly2();
+        int s=m.fri(a);
+        int v=m.end(b);//Write your code
+         if(s/a==v/b)
+        {
+            System.out.println("Friendly Pair");
+        }
+        else
+        {
+            System.out.println("Not Friendly Pair");
+        } 
+    }
+}
+class Friendly2
+{
+    public static int fri(int a)
+    {
+       int s=0,i=1,t;
+        while(i<=a)
+        {
+            t=a/i;
+            if(a%i==0)
+            {
+            s+=t;
+            }
+            i++;
+        }
+        return s;
+    }
+    public static int end(int b)
+    {
+        int v=0,j=1,u;
+        while(j<=b)
+        {
+            u=b/j;
+            if(b%j==0)
+            {
+            v+=u;
+            }
+            j++;
+        }
+        return v;
+    }
+}
