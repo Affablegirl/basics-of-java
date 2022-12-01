@@ -1,0 +1,24 @@
+Write a program to generate the following series --- 0,2,8,14,...,34
+import java.util.Scanner;
+public class Series6
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a;
+        for(int i=1;i<=n;i++)
+        {
+            if(i%2==0)
+            {
+                a=i*i-2;
+            }
+            else
+            {
+                a=i*i-1;
+            }
+            System.out.printf("%d  ",a);
+        }
+        //Write your code
+    }
+}
