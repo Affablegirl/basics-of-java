@@ -1,0 +1,27 @@
+Program to check whether the given number is a Palindrome or  Not a Palindrome is discussed here. Any number is said to be a palindrome if the original number and the reverse of the original number are the same.
+import java.util.Scanner;
+public class Palindrome
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int o=sc.nextInt();
+        int r=0,re,a;
+        a=o;
+        while(o!=0)
+        {
+            re=o%10;
+            r=r*10+re;
+            o/=10;
+        }
+        if(a==r)
+        {
+            System.out.println("Palindrome");
+        }
+        else
+        {
+           System.out.println("Not a Palindrome"); 
+        }
+        //Write your code
+    }
+}
