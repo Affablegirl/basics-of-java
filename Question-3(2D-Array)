@@ -1,0 +1,31 @@
+import java.util.*;
+public class Storeprint
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        //int r=sc.nextInt();
+        //int c=sc.nextInt();
+        int[][] s=new int[3][3];
+        int i;
+        int j;
+        System.out.println("Enter Elements");//Boom here
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+              s[i][j]=sc.nextInt();  
+            }
+            //s[i]=sc.nextInt();
+        }
+        System.out.println("Printing Elements...");
+        for(i=0;i<3;i++)
+        {
+         for(j=0;j<3;j++)
+         {
+             System.out.print(s[i][j] + "   ");
+         }
+         System.out.println();
+        }
+    }
+}    //Boom here
